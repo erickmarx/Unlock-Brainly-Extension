@@ -13,10 +13,12 @@ window.onload = function () {
 
     if (banner) banner.parentNode.removeChild(banner);
 
-    const bottomBanner = document.querySelector(
-      "div[data-testid=b2s_promo_bottom_banner_module_id]"
-    );
+    setTimeout(() => {
+      const bottomBanner = document.querySelector(
+        "div[data-testid=b2s_promo_bottom_banner_module_id]"
+      );
 
-    if (bottomBanner) bottomBanner.remove();
+      if (bottomBanner) bottomBanner.remove();
+    }, 1000);
   }
 };
