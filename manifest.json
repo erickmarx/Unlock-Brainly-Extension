@@ -1,0 +1,25 @@
+{
+  "name": "__MSG_extensionName__",
+  "short_name": "Unlock Brainly",
+  "author": "Me",
+  "description": "__MSG_extensionDescription__",
+  "version": "1.0.1",
+  "manifest_version": 3,
+  "default_locale": "pt_BR",
+  "content_scripts": [
+    {
+      "js": ["src/inject.js"],
+      "matches": [
+        "*://brainly.com.br/*",
+        "*://brainly.com/*",
+        "*://brainly.in/*"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  }
+}
